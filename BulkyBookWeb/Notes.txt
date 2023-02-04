@@ -1,0 +1,2 @@
+Use "add-migration (message)" (no parentheses) to add migration to project after DbContext setup using Nuget package manager console
+Use "update database" (no parentheses) after adding migration to update the database
