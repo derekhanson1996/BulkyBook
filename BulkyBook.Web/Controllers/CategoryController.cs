@@ -56,7 +56,8 @@ namespace BulkyBook.Web.Controllers
                 return NotFound();
             }
 
-            var categoryFromDb = _db.Categories.Find(id);   //Finds Category with that id
+            /*var categoryFromDb = _db.Categories.Find(id);*/   //Finds Category with that id
+            var categoryFromDb = _db.Categories.FirstOrDefault(u => u.Name == "id");
 
             if (categoryFromDb == null)
             {
