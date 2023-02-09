@@ -11,5 +11,8 @@ namespace BulkyBook.Data
 
         //Creates a table named Categories using the Category class
         public DbSet<Category> Categories { get; set; }
+
+        //Creates a table named CoverTypes using the CoverType class
+        public DbSet<CoverType> CoverTypes { get; set; }
     }
 }
