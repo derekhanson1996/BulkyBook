@@ -1,7 +1,6 @@
 ﻿using BulkyBook.Data.Repository;
 using BulkyBook.Data.Repository.IRepository;
 using BulkyBook.Models;
-using BulkyBook.Models.ViewModels;
 using BulkyBook.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -10,7 +9,8 @@ using System.Security.Claims;
 
 namespace BulkyBook.Web.Areas.Customer.Controllers
 {
-    public class HomeController : Controller
+	[Area("Customer")]
+	public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 		private readonly IUnitOfWork _unitOfWork;

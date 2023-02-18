@@ -8,7 +8,8 @@ using Microsoft.Extensions.Hosting;
 
 namespace BulkyBook.Web.Areas.Admin.Controllers
 {
-    public class ProductController : Controller
+	[Area("Admin")]
+	public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment _hostEnvironment;

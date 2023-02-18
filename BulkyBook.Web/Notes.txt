@@ -1,3 +1,4 @@
 Use "add-migration (message)" (no parentheses) to add migration to project after DbContext setup using Nuget package manager console.
 Use "update-database" (no parentheses) after adding migration to update the database.
 N Tier Architecture is adding multiple projects to the same solution to prevent clutter and everything being done in one project. Example: BulkyBook.Models, BulkyBook.Utility, etc.
+Identity is an API that supports user interface (UI) login functionality. It also manages users, passwords, profile data, roles, claims, tokens, email confirmation, and more.

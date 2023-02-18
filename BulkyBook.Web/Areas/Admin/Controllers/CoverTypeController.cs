@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BulkyBook.Web.Areas.Admin.Controllers
 {
-    public class CoverTypeController : Controller
+	[Area("Admin")]
+	public class CoverTypeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
 
